@@ -12,7 +12,7 @@ const Quesion = () => {
     <>
       <h2 style={{ fontSize: "50px", textAlign: "center" }}>Questions</h2>
       {questions.map((question) => (
-        <QuestionData question={question}></QuestionData>
+        <QuestionData key={question.id} question={question}></QuestionData>
       ))}
     </>
   );

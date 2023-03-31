@@ -52,7 +52,7 @@ const SignleBlog = ({ blog, handdleMarkAsBtn, handdleBookMark }) => {
       <span>{tags}</span>
       <p
         onClick={() => handdleMarkAsBtn(time)}
-        style={{ color: "red", cursor: "pointer" }}
+        style={{ color: "#6047EC", cursor: "pointer" }}
       >
         {markAsRead}
       </p>
