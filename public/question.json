@@ -34,10 +34,10 @@
         "id": "6426f0a3061cd146486864cb",
         "ques": "4. how does react work.",
         "answer": [
-            "In React, both props and state are used to manage the data that a component uses and displays. However, they have different characteristics and purposes:",
-            "Props (short for properties) are used to pass data from a parent component to a child component. They are read-only and cannot be modified by the child component. The parent component can change the props values at any time, and when this happens, React will re-render the child component with the new props.",
-            "State, on the other hand, is used to manage the internal data of a component. It represents the current state of the component and can be modified by the component itself. When the state of a component changes, React will re-render the component with the updated state. State is defined and managed within the component, and it can be changed using the setState method.",
-            "In summary, props are used to pass data down from a parent component to a child component, while state is used to manage internal data within a component."
+            "'Virtual DOM' React uses a virtual DOM (Document Object Model) to optimize the update process. The virtual DOM is a lightweight representation of the physical DOM that React uses to keep track of changes in the UI. When an element's state changes, React updates the virtual DOM and then compares it to the previous version of the virtual DOM. It then calculates the minimum set of changes needed to update the actual DOM and applies those changes efficiently",
+            "'JSX': React uses a syntax extension called JSX (JavaScript XML) that allows you to write HTML-like code within your JavaScript. JSX makes it easy to write declarative and expressive UI code and allows you to use the full power of JavaScript within your components.",
+            "'hooks' React provides a way to manage state between your components using useState hooks. The state is data that is maintained within a component and can change over time. When a component's state changes, React will re-render the component with the updated state..",
+            "'Props': React allows you to pass data and functionality to child components via props (short for properties). Props are read-only and cannot be modified by child components. Props provide a way to create reusable and composable elements."
         ],
         "name": "Johnson Hanson"
     }
