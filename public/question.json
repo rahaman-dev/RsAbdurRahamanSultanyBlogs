@@ -3,19 +3,15 @@
         "id": "6426f0a3cdc49c959a44f5e0",
         "ques": "1. what is the difference between props and state?",
         "answer": [
-            "`props `are used to pass data down from the parent component to the child component, and the `state ` is used to manage the component's internal data",
-            "'প্রপস' প্যারেন্ট কম্পোনেন্ট থেকে চাইল্ড কম্পোনেন্টে ডেটা পাঠানোর জন্য ব্যবহার করা হয়, এবং 'স্টেট' কম্পোনেন্টের অভ্যন্তরীণ ডেটা পরিচালনা করতে ব্যবহৃত হয়।"
+            "`props `are used to pass data down from the parent component to the child component, and the `state ` is used to manage the component's internal data"
         ],
         "name": "Blanca Cardenas"
     },
     {
         "id": "6426f0a3860b6ad8047e1e9d",
-        "ques": "2. how does work useState on react?",
+        "ques": "2. How does useState work?",
         "answer": [
-            "In React, both props and state are used to manage the data that a component uses and displays. However, they have different characteristics and purposes:",
-            "Props (short for properties) are used to pass data from a parent component to a child component. They are read-only and cannot be modified by the child component. The parent component can change the props values at any time, and when this happens, React will re-render the child component with the new props.",
-            "State, on the other hand, is used to manage the internal data of a component. It represents the current state of the component and can be modified by the component itself. When the state of a component changes, React will re-render the component with the updated state. State is defined and managed within the component, and it can be changed using the setState method.",
-            "In summary, props are used to pass data down from a parent component to a child component, while state is used to manage internal data within a component."
+            "`useState ` is a hook in React that allows functional components to manage state. It takes an initial value as an argument and returns an array with the current state value and a function to update that value, triggering a re-render of the component when the state is updated."
         ],
         "name": "Burns Dotson"
     },
