@@ -9,6 +9,7 @@ const QuestionData = ({ question }) => {
       <h3>{answer[1]}</h3>
       <h3>{answer[2]}</h3>
       <h3>{answer[3]}</h3>
+      <h3>{answer[4]}</h3>
     </div>
   );
 };

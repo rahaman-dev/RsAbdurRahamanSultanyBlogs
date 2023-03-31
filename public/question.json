@@ -21,12 +21,13 @@
     },
     {
         "id": "6426f0a3061cd146486864cb",
-        "ques": "3. what do useState without data loading. ",
+        "ques": "3. What can useState do other than load data? ",
         "answer": [
-            "In React, both props and state are used to manage the data that a component uses and displays. However, they have different characteristics and purposes:",
-            "Props (short for properties) are used to pass data from a parent component to a child component. They are read-only and cannot be modified by the child component. The parent component can change the props values at any time, and when this happens, React will re-render the child component with the new props.",
-            "State, on the other hand, is used to manage the internal data of a component. It represents the current state of the component and can be modified by the component itself. When the state of a component changes, React will re-render the component with the updated state. State is defined and managed within the component, and it can be changed using the setState method.",
-            "In summary, props are used to pass data down from a parent component to a child component, while state is used to manage internal data within a component."
+            "Manage component state",
+            "Render dynamic content",
+            "Implement controlled components",
+            "Handle user interactions",
+            "Store and manage application data"
         ],
         "name": "Johnson Hanson"
     },
