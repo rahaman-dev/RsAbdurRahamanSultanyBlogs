@@ -5,6 +5,7 @@ import AllBlog from "./Components/Blogs/AllBlogs/AllBlog";
 import SideBar from "./Components/SideBar/SideBar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Quesion from "./Components/Quesion/Quesion";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -57,6 +58,7 @@ function App() {
         <SideBar times={times} title={title}></SideBar>
         <ToastContainer></ToastContainer>
       </div>
+      <Quesion></Quesion>
     </>
   );
 }
