@@ -1,0 +1,26 @@
+[
+    {
+        "id": "6426f0a3cdc49c959a44f5e0",
+        "question": "1. what is the difference between props and state?",
+        "answer": "http://placehold.it/32x32",
+        "name": "Blanca Cardenas"
+    },
+    {
+        "id": "6426f0a3860b6ad8047e1e9d",
+        "question": "2. how does work useState on react?",
+        "answer": "http://placehold.it/32x32",
+        "name": "Burns Dotson"
+    },
+    {
+        "id": "6426f0a3061cd146486864cb",
+        "question": "3. what do useState without data loading. ",
+        "answer": "http://placehold.it/32x32",
+        "name": "Johnson Hanson"
+    },
+    {
+        "id": "6426f0a3061cd146486864cb",
+        "question": "4. how does react work.",
+        "answer": "http://placehold.it/32x32",
+        "name": "Johnson Hanson"
+    }
+]
