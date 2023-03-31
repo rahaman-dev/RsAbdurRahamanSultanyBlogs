@@ -50,9 +50,15 @@ const SignleBlog = ({ blog, handdleMarkAsBtn, handdleBookMark }) => {
       </div>
       <h1>{title}</h1>
       <span>{tags}</span>
+      <br></br>
       <p
+        style={{
+          display: "inline-block",
+          color: "#6047EC",
+          marginBottom: "50px",
+          cursor: "pointer",
+        }}
         onClick={() => handdleMarkAsBtn(time)}
-        style={{ color: "#6047EC", cursor: "pointer" }}
       >
         {markAsRead}
       </p>
