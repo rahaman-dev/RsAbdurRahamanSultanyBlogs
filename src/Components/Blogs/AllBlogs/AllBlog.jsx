@@ -4,6 +4,7 @@ import "./AllBlog.css";
 
 const AllBlog = ({ handdleMarkAsBtn, handdleBookMark }) => {
   const [blogs, setBlogs] = useState([]);
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())

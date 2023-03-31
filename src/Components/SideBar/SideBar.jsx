@@ -15,7 +15,6 @@ const SideBar = ({ times, title }) => {
 
   useEffect(() => {
     let getTitleFromLocalStorage = localStorage.getItem("title");
-
     if (getTitleFromLocalStorage) {
       let convert = getTitleFromLocalStorage.split("?");
       setBreckTitle(convert);

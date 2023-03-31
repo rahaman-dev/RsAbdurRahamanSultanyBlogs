@@ -24,14 +24,18 @@ function App() {
     }
   };
 
-  const handdleBookMark = (title) => {
-    const priviusTitle = localStorage.getItem("title");
-    if (priviusTitle && priviusTitle == title) {
+  const handdleBookMark = (title, id) => {
+    let priviusTitle = localStorage.getItem("title");
+    let priviusId = localStorage.getItem("id");
+
+    if (priviusId === id) {
       setToasts(true);
       toast("Already Exit!");
     } else {
+      localStorage.setItem("id", id);
       setToasts(false);
     }
+
     if (priviusTitle) {
       const sum = priviusTitle + title;
       JSON.stringify(localStorage.setItem("title", sum));

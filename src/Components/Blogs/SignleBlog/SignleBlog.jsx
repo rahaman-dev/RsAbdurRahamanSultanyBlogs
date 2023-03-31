@@ -29,7 +29,7 @@ const SignleBlog = ({ blog, handdleMarkAsBtn, handdleBookMark }) => {
         <div className="right">
           <p className="profiles">
             {time} Min Read
-            <span onClick={() => handdleBookMark(title)}>
+            <span onClick={() => handdleBookMark(title, id)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
