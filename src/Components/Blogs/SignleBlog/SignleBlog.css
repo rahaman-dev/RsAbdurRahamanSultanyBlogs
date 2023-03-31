@@ -1,0 +1,24 @@
+.profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileContainer {
+  display: flex;
+  align-items: center;
+}
+.profilePicute {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.profileImage {
+  line-height: 10px;
+}
+.bookMark {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
