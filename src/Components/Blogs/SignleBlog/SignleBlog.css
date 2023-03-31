@@ -22,3 +22,15 @@
   margin-left: 5px;
   cursor: pointer;
 }
+.mainImage {
+  width: 845px;
+  height: 450px;
+}
+/* responsive  */
+@media only screen and (max-width: 900px) {
+  .mainImage {
+    width: 480px;
+    height: 300px;
+  }
+}
+/* style={{ width: "845px", height: "450px" }} */

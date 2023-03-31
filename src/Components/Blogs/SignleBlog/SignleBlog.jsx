@@ -15,7 +15,7 @@ const SignleBlog = ({ blog, handdleMarkAsBtn, handdleBookMark }) => {
   } = blog;
   return (
     <div>
-      <img src={picture} style={{ width: "845px", height: "450px" }} />
+      <img src={picture} className="mainImage" />
       <div className="profiles">
         <div className="left">
           <div className="profileContainer">
