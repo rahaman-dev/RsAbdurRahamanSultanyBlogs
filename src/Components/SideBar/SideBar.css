@@ -1,5 +1,6 @@
 .sideBar {
   width: 500px;
+  height: auto;
   background-color: #1111110d;
   padding: 20px;
   margin: 0 20px;
@@ -7,6 +8,6 @@
 @media only screen and (max-width: 900px) {
   .sideBar {
     width: 400px;
-    height: 400px;
+    height: auto;
   }
 }

@@ -26,8 +26,20 @@ function App() {
   };
 
   const handdleBookMark = (title, id) => {
-    let priviusTitle = localStorage.getItem("title");
+    let updatedTitle = [];
+    let updatedId = [];
+    let priviusTitle = JSON.parse(localStorage.getItem("title"));
     let priviusId = localStorage.getItem("id");
+
+    if (priviusTitle) {
+      updatedTitle = [...priviusTitle, title];
+      localStorage.setItem("title", JSON.stringify(updatedTitle));
+      setTitle(updatedTitle);
+    } else {
+      updatedTitle = [title];
+      localStorage.setItem("title", JSON.stringify(updatedTitle));
+      setTitle(updatedTitle);
+    }
 
     if (priviusId === id) {
       setToasts(true);
@@ -35,15 +47,6 @@ function App() {
     } else {
       localStorage.setItem("id", id);
       setToasts(false);
-    }
-
-    if (priviusTitle) {
-      const sum = priviusTitle + title;
-      JSON.stringify(localStorage.setItem("title", sum));
-      setTitle(sum);
-    } else {
-      JSON.stringify(localStorage.setItem("title", title));
-      setTitle(title);
     }
   };
 

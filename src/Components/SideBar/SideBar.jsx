@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SideBar.css";
 import Title from "./Title/Title";
-import { ToastContainer, toast } from "react-toastify";
 
 const SideBar = ({ times, title }) => {
   const [breckTime, setBreckTime] = useState();
@@ -14,11 +13,10 @@ const SideBar = ({ times, title }) => {
   }, [times]);
 
   useEffect(() => {
-    let getTitleFromLocalStorage = localStorage.getItem("title");
+    let getTitleFromLocalStorage = JSON.parse(localStorage.getItem("title"));
     if (getTitleFromLocalStorage) {
-      let convert = getTitleFromLocalStorage.split("?");
-      setBreckTitle(convert);
-      setLength(convert.length);
+      setBreckTitle(getTitleFromLocalStorage);
+      setLength(getTitleFromLocalStorage.length);
     }
   }, [title]);
 
@@ -35,7 +33,6 @@ const SideBar = ({ times, title }) => {
         Spent time on read min : {breckTime}
       </h2>
       <h2>Bookmarked Blogs : {length} </h2>
-
       {breckTitle.map((tre) => {
         return <Title tre={tre}></Title>;
       })}
