@@ -27,7 +27,6 @@ function App() {
 
   const handdleBookMark = (title, id) => {
     let updatedTitle = [];
-    let updatedId = [];
     let priviusTitle = JSON.parse(localStorage.getItem("title"));
     let priviusId = localStorage.getItem("id");
 
